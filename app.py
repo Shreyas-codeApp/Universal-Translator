@@ -30,7 +30,7 @@ glossy_style = """
 """
 
 st.markdown(glossy_style, unsafe_allow_html=True)
-st.markdown('<div class="glossy-text">Universal Translator Bot</div>', unsafe_allow_html=True)
+st.markdown('<div class="glossy-text">Universal Translator App</div>', unsafe_allow_html=True)
 language = st.selectbox(
     "Select Language",
     ("Hindi", "Spanish", "French", "German", "Chinese", "Japanese", "Russian", "Marathi","Korean"),
@@ -64,4 +64,5 @@ if prompt:
     ai_msg = llm.invoke(messages)
     with st.chat_message("assistant"):
             st.write((ai_msg.content))
+
 
